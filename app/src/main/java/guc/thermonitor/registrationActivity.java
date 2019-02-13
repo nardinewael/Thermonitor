@@ -1,5 +1,6 @@
 package guc.thermonitor;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,7 +40,7 @@ public class registrationActivity extends AppCompatActivity {
         });
     }
     private void registerUser(){
-        String user = username.getText().toString();
+        final String user = username.getText().toString();
         String mail = email.getText().toString();
         String pw = password.getText().toString();
         if (user.isEmpty()){
@@ -59,7 +60,11 @@ public class registrationActivity extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
+                        Intent intent = new Intent(getApplicationContext(), ListActivity.class);
                         Toast.makeText(getApplicationContext(),"congratulation you hace created the account",Toast.LENGTH_SHORT).show();
+                        intent.putExtra("User", user);
+                        startActivity(intent);
+
                     }
                     else {
                         Toast.makeText(getApplicationContext(),task.getException().getMessage(),Toast.LENGTH_LONG).show();
