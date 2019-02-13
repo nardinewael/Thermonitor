@@ -10,7 +10,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class ListActivity extends AppCompatActivity {
-    private static String[] list = {"android","iphone","windows","blackberry","linux"};
+    private static String[] list = {"SQL","JAVA","JAVA SCRIPT","C#","PYTHON","C++"};
     private ListView listview ;
 
     @Override
@@ -18,7 +18,7 @@ public class ListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
         listview = findViewById(R.id.listView);
-        ListAdapter adapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1 ,list);
+        ListAdapter adapter = new CustomAdaptor(getApplicationContext(),list);
         listview.setAdapter(adapter);
         listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

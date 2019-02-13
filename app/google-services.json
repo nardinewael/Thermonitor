@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1076159124012",
+    "firebase_url": "https://thermonitor-50b6b.firebaseio.com",
+    "project_id": "thermonitor-50b6b",
+    "storage_bucket": "thermonitor-50b6b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1076159124012:android:47900660afd7d052",
+        "android_client_info": {
+          "package_name": "guc.thermonitor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1076159124012-t66m2akkb1fakdbs244mr2qhvjhgp3pu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "guc.thermonitor",
+            "certificate_hash": "dc938f6eb1e0d572a2573d04c420d01294ab9ad7"
+          }
+        },
+        {
+          "client_id": "1076159124012-m98kuj94n3dj0gl5gr1n4g266gh9s9du.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCD9k6cc-BHpIfnZelynPk_EKm9fpE0xbo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1076159124012-m98kuj94n3dj0gl5gr1n4g266gh9s9du.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
