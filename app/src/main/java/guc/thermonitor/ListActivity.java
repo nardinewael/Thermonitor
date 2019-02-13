@@ -71,8 +71,8 @@ public class ListActivity extends AppCompatActivity {
                 String onclick = String.valueOf(parent.getItemAtPosition(position));
                 intent.putExtra("message", onclick);
                 startActivity(intent);
+                finish();
             }
         });
     }
-
 }
