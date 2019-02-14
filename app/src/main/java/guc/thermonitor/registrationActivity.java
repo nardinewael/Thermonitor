@@ -64,7 +64,7 @@ public class registrationActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"congratulation you hace created the account",Toast.LENGTH_SHORT).show();
                         intent.putExtra("User", user);
                         startActivity(intent);
-
+                        finish();
                     }
                     else {
                         Toast.makeText(getApplicationContext(),task.getException().getMessage(),Toast.LENGTH_LONG).show();
